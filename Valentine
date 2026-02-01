@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.logo {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#DB4437;}
+.logo span:nth-child(3){color:#F4B400;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#0F9D58;}
+.logo span:nth-child(6){color:#DB4437;}
+
+.search-box {
+  margin-top: 30px;
+}
+
+input {
+  width: 500px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid #dfe1e5;
+  font-size: 18px;
+  outline: none;
+}
+
+input:hover {
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #f8f9fa;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  border: 1px solid #dadce0;
+}
+
+#result {
+  margin-top: 80px;
+  font-size: 26px;
+  color: #d93025;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+<span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+</div>
+
+<div class="search-box">
+<input id="query" placeholder="Search Google or type a URL">
+</div>
+
+<div class="buttons">
+<button onclick="search()">Google Search</button>
+<button onclick="search()">I'm Feeling Lucky</button>
+</div>
+
+<div id="result">
+💖 Will you be my Valentine? 💖 <br><br>
+You are my favorite search result forever ❤️
+</div>
+
+<script>
+function search(){
+  document.querySelector(".logo").style.display="none";
+  document.querySelector(".search-box").style.display="none";
+  document.querySelector(".buttons").style.display="none";
+  document.getElementById("result").style.display="block";
+}
+</script>
+
+</body>
+</html>
